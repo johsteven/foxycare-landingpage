@@ -10,6 +10,8 @@
   text-decoration: none !important;
   outline: none;
   border: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
@@ -523,6 +525,10 @@ section.contact .container .body h2 {
   color: #fff;
   font-weight: 600;
   width: 450px;
+}
+
+section.contact .container .body .contact-btn {
+  background-color: #fff;
 }
 
 section.contact .container .body .contact-btn:hover, section.contact .container .body .contact-btn:focus {
