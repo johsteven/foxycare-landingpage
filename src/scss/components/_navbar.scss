@@ -1,0 +1,86 @@
+.navbar {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
+    .container {
+        align-items: center;
+        .navbar-brand {
+            font-weight: 700;
+            font-family: 'Roboto', sans-serif;
+            font-size: 18px;
+            img {
+                object-fit: contain;
+                margin-right: 7.5px;
+                width: 35px;
+                height: 35px;
+            }
+        }
+        .nav-item {
+            margin-left: 30px;
+            font-size: 14px;
+            .nav-link {
+                color: #557087;
+            }
+            .btn {
+                font-size: 14px;
+                padding: .55rem 1.2rem;
+            }
+        }
+        .nav-item.active {
+            .nav-link {
+                color: $primary-color;
+                font-weight: 600;
+            }
+        }
+        .nav-toggler {
+            display: none;
+            font-weight: 600;
+            font-size: 30px;
+            cursor: pointer;
+        }
+    }
+}
+
+@media (max-width: 1200px) {}
+
+@media (max-width: 992px) {
+    .navbar {
+        .container {
+            .navbar-brand {
+                font-size: 15px;
+            }
+            .navbar-nav {
+                display: none;
+            }
+            .nav-toggler {
+                display: block;
+            }
+        }
+    }
+    .navbar.toggle {
+        background-color: #fff !important;
+        .container {
+            .navbar-nav {
+                display: flex;
+                position: absolute;
+                top: 85px;
+                background: #fff;
+                left: 0;
+                right: 0;
+                padding: 0 1rem;
+                padding-bottom: 1rem;
+                box-shadow: 0 15px 30px 0 rgba(0, 0, 0, .125);
+                &>.nav-item {
+                    margin-left: 0;
+                    margin-bottom: 10px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {}
+
+@media (max-width: 576px) {}

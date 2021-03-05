@@ -1,0 +1,12 @@
+{
+    "name": "foxycare-landingpage",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "purgebs": "purgecss --css src/vendor/bootstrap/bootstrap.css --content index.html --output src/vendor/bootstrap/bootstrap.purge.css"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC"
+}

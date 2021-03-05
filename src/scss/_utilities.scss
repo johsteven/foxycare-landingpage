@@ -1,0 +1,31 @@
+section {
+    display: flex;
+    align-items: center;
+    .container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .desc {
+            width: 550px;
+            p {
+                color: #999999;
+                margin: 20px 0;
+                line-height: 26px;
+            }
+        }
+    }
+}
+
+@media (max-width: 992px) {
+    section {
+        .container {
+            flex-direction: column;
+            .desc {
+                width: 100% !important;
+                p {
+                    margin-top: 0;
+                }
+            }
+        }
+    }
+}

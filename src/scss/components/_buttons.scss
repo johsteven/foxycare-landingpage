@@ -1,0 +1,17 @@
+.btn {
+    border-radius: 7px;
+    font-weight: 600;
+    padding: .875rem 2.2rem;
+    font-size: 15px;
+}
+
+@media (max-width: 992px) {
+    .btn {
+        width: 350px;
+        max-width: 100%;
+        margin: auto;
+        padding: .75rem 1.8rem;
+        display: block;
+        font-size: 13px;
+    }
+}
